@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        
+        header > h1 {
+            font-family: 'Pacifico', cursive;
+            font-weight: normal;
+            font-size: 1.8em;
+            color: rgb(235, 237, 247);
+            text-align: left;
+            padding-left: 10px;
+        }
+        header {
+            background-color: rgb(34, 41, 107);
+            padding: 10px 0px 10px 0px;
+            margin: 0px;
+            color: aliceblue;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(7, 11, 46);
+            margin: 0px;
+            color: aliceblue;
+        }
+        nav {
+            background-color: rgb(57, 65, 143);
+            padding: 10px;
+            border: 0px;
+        }
+        nav > a {
+            background-color: rgb(76, 83, 163);
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 11px;
+            
+        }
+        nav > a:hover {
+            color: black;
+            background-color: antiquewhite;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        main {
+            background-image: linear-gradient(to right,  #d68d1f, #1958b6);
+            padding: 10px;
+        }
+        .first {
+            background-image: linear-gradient(to right,  hsla(0, 0%, 100%, 0.15), hsla(0, 0%, 43%, 0.1));
+            border-radius: 10px;
+            padding: 2px 10px 10px 5px;
+            box-shadow: 5px 3px 5px 1px rgba(0, 0, 0, 0.068);
+        }
+        .first > p {
+            text-align: justify;
+        }
+        .first > aside > p {
+            text-align: right;
+        }
+        .second {
+            background-image: linear-gradient(to right,  hsla(0, 0%, 100%, 0.15), hsla(0, 0%, 43%, 0.1));
+            border-radius: 10px;
+            padding: 2px 10px 10px 5px;
+            text-align: justify;
+            box-shadow: 5px 3px 5px 1px rgba(0, 0, 0, 0.068);
+
+        }
+        .second > aside > p {
+            text-align: right;
+        }
+        .border {
+            background-image: linear-gradient(to right,  hsla(0, 0%, 100%, 0.15), hsla(0, 0%, 43%, 0.1));
+            border-radius: 10px;
+            padding: 2px 10px 10px 5px;
+            text-align: justify;
+            box-shadow: 5px 3px 5px 1px rgba(0, 0, 0, 0.068);
+        }
+        footer {
+            text-align: center;
+            font-weight: normal;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>illumini</h1>
+        <nav>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+
+        </section>
+
+        <section id="noticias">
+            <article class="first">
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odit deserunt ad ea maxime nesciunt obcaecati cumque molestiae optio id voluptate, sit tempora ut exercitationem impedit debitis, hic error minus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium excepturi minus necessitatibus, temporibus quod quae iure nihil velit, qui nulla quia delectus perferendis earum ea sequi aliquid ad quo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad quae odio quisquam hic dicta ipsa quod ratione, quis harum neque maiores velit dolores eaque totam, molestiae quaerat praesentium laboriosam Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint nam nobis quidem quibusdam. Facilis doloribus cupiditate blanditiis magni deserunt itaque, perspiciatis pariatur repellendus laboriosam, aliquid, officia beatae nemo voluptatibus consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus laborum culpa tenetur ea architecto, ab vero dicta? Deserunt adipisci dignissimos consequuntur nemo veritatis molestias dicta totam nobis odit unde!</p>
+                <aside>
+                    <p>Artigo escrito por Papai.</p>
+                </aside>
+            </article>
+            <br>
+            <article class="second">
+                <h2>Notícias sobre o Mundo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odit deserunt ad ea maxime nesciunt obcaecati cumque molestiae optio id voluptate, sit tempora ut exercitationem impedit debitis, hic error minus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium excepturi minus necessitatibus, temporibus quod quae iure nihil velit, qui nulla quia delectus perferendis earum ea sequi aliquid ad quo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad quae odio quisquam hic dicta ipsa quod ratione, quis harum neque maiores velit dolores eaque totam, molestiae quaerat praesentium laboriosam Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint nam nobis quidem quibusdam. Facilis doloribus cupiditate blanditiis magni deserunt itaque, perspiciatis pariatur repellendus laboriosam, aliquid, officia beatae nemo voluptatibus consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus laborum culpa tenetur ea architecto, ab vero dicta? Deserunt adipisci dignissimos consequuntur nemo veritatis molestias dicta totam nobis odit unde!</p>
+                <aside>
+                    <p>Artigo escrito por Papai.</p>
+                </aside>
+            </article>
+            <br>
+            <article class="border">
+                <h2>Trabalho com bordas</h2>
+                <p>border-radius: 10px 10px 10px 10px</p>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Desenvolvido por <a href="#">Papai</a></p>
+    </footer>
+</body>
+</html>
