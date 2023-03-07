@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Passion+One&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;    
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+html, body {
+    min-height: 100vh;
+    background-color: rgb(206, 236, 236);
+    font-family: var(--fonte1);
+}
+header {
+    padding-top: 25px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+    padding-bottom: 25px;
+}
+header > h1 {
+
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 5vw;
+    
+}
+header > a, footer > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
+}
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(37, 37, 37, 0.575);
+    padding: 5px;
+    text-shadow: 2px 2px 0 black;
+    
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: darkslategrey;
+    color: white;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.384);
+    background-attachment: fixed;
+}
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+}
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.863);
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.863);
+    text-align: center;
+    margin: 0px;
+    color: aliceblue;
+}
+footer > p {
+    padding: 10px 10px 15px 10px;
+    font-size: 14px;
+}
+footer > a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-family: 'Sriracha', cursive;
+}
