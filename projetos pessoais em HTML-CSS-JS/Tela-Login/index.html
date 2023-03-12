@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url(pexels-eberhard-grossgasteiger-1367192.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            background-repeat: no-repeat;
+            min-width: 300px;
+            min-height: 350px;
+        }
+        div.login {
+            padding: 20px;
+            width: 250px;
+            height: 300px;
+            border-radius: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.048);
+            backdrop-filter: blur( 1.5px );
+            -webkit-backdrop-filter: blur( 13.5px );
+            border-radius: 10px;
+            border: 1px solid rgb(235, 235, 235);
+            margin: auto;
+            position: relative;
+            position: absolute;
+            top: 0; bottom: 0;
+            left: 0; right: 0;
+            margin: auto;
+            color: white;
+        }
+
+        button {
+            width: 250px;
+            background-color: white;
+            border-radius: 25px;
+            border: none;
+            padding: 9px;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        p {
+            font-size: 0.7em;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button:hover {
+            transition: 0.5s;
+            width: 80px;
+        }
+        div.email > p {
+            border-bottom: 1px solid white;
+            text-align: left;
+            margin: 0px;
+            padding: 5px;
+        }
+        div.senha > p {
+            border-bottom: 1px solid white;
+            text-align: left;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <div class="email">
+            <p>Email</p>
+        </div>
+        <div class="senha">
+            <p>Senha</p>
+        </div>
+        <p><a href="#">Remember Me Forgot Password</a></p>
+        <button>Log in</button>
+        <p>Don't have an account? <a href="#">Register</a></p>
+    </div>
+    
+</body>
+</html>

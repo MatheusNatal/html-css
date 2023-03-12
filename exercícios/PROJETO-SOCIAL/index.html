@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(imagens/fundo-madeira.jpg);
+            background-size: cover;
+        }
+        section#celular {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            height: 627px;
+            width: 311px;
+            top: 50%;
+            left: 50%;
+            border: 0;
+        }
+        iframe {
+            position: absolute;
+            transform: translate(-49.7%, -49.5%);
+            height: 469px;
+            width: 269px;
+            top: 50%;
+            left: 50%;
+        }
+        main {
+            position: relative;
+            height: 98vh;
+        }
+        section#redes {
+            text-align: right;
+        }
+        section#redes img {
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            border-radius: 360px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+            box-sizing: border-box;
+        }
+
+        section#redes img:hover {
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            transform: translate(-3px, -3px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+            transition: transform .3s, border 1.8s;
+        }
+            
+    </style>
+</head>
+<body>
+    <main>
+        <section id="redes" onclick="clicou()">
+            <a href="#" id="home">
+                <img src="imagens/home.jpg" alt="home" width="80px" height="80px">
+            </a>
+            <br>
+            <a href="#" id="insta">
+                <img src="imagens/instagram.jpg" alt="instagram" width="80px" height="80px" id="imagem">
+            </a>
+            <br>
+            <a href="#">
+                <img src="imagens/twitter.jpg" alt="twitter" width="80px" height="80px">
+            </a>
+            <br>
+            <a href="#">
+                <img src="imagens/youtube.jpg" alt="youtube" width="80px" height="80px">
+            </a>
+            <br>
+            <a href="#">
+                <img src="imagens/facebook.jpg" alt="facebook" width="80px" height="80px">
+            </a>
+        </section>
+        <section id="celular">
+            <div>
+                <img src="imagens/iphone.png" alt="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14712.397922087637!2d-43.4152174!3d-22.79877745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1spt-BR!2sbr!4v1678537890608!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width=""></iframe>
+            </div>
+        </section>
+    </main>
+    <script>
+        function clicou() {
+            s_insta = window.document.getElementById("insta")
+            s_insta.innerHTML += '<iframe src="https://www.instagram.com/airdropbrothers/"></iframe>'
+        }
+    </script>
+</body>
+</html>
