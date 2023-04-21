@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e radio</title>
+    <style>
+        body {
+            background-color: rgb(15, 15, 15);
+        }
+        div#formulario {
+            margin: auto;
+            max-width: 500px;
+            margin-top: 10vh;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: -3px 3px 2px rgba(255, 255, 255, 0.075);
+        }
+        div {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        div h1 {
+            text-align: center;
+        }
+        fieldset#Sexo {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="formulario">
+        <h1>Formulário-006</h1>
+    <form action="" method="post">
+        <fieldset id="Sexo">
+            <legend>Escolha</legend>
+            <label for="icor">Cor: </label><input type="color" name="cor" id="icor" value="#00ff00"><br>
+
+            <label for="inivel">Nível de Satisfação: </label><input type="range" name="nivel" id="inivel" min="1" max="5" value="2"><br><br>
+
+            <label for="ifoto"></label><input type="file" name="foto" id="ifoto">
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+    </div>
+    <script>
+const nivel = document.getElementById('inivel');
+
+nivel.addEventListener('input', function(event) {
+  const colors = {
+    1: 'red',
+    2: 'orange',
+    3: 'yellow',
+    4: 'lightgreen',
+    5: 'green'
+  };
+
+  const min = event.target.min || 1;
+  const max = event.target.max || 5;
+  const val = event.target.value;
+
+  const bgColor = Object.values(colors)
+    .slice(min-1, max)
+    .map((color, index) => val >= index+min ? color : '#ddd')
+    .join(', ');
+
+  nivel.style.background = `linear-gradient(to right, ${bgColor})`;
+});
+
+    </script>
+</body>
+</html>

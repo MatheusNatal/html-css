@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e radio</title>
+    <style>
+        body {
+            background-color: rgb(15, 15, 15);
+        }
+        div#formulario {
+            margin: auto;
+            max-width: 500px;
+            margin-top: 10vh;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: -3px 3px 2px rgba(255, 255, 255, 0.075);
+        }
+        div {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        div h1 {
+            text-align: center;
+        }
+        fieldset#Sexo {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="formulario">
+        <h1>Formulário-005</h1>
+    <form action="">
+        <fieldset id="Sexo">
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexmas"><label for="isexmas">Masculino</label>
+            <input type="radio" name="sexo" id="isexfem"><label for="isexfem">Feminino</label>
+        </fieldset>
+
+        <fieldset id="esportes">
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="basquete" id="ibasquete"><label for="ibasquete">Basquete</label><br>
+            <input type="checkbox" name="futebol" id="ifutebol"><label for="ifutebol">Futebol</label><br>
+            <input type="checkbox" name="volei" id="ivolei"><label for="ivolei">Vôlei</label><br>
+            <input type="checkbox" name="natacao" id="inatacao"><label for="inatacao">Natação</label><br>
+            <input type="checkbox" name="karate" id="ikarate"><label for="ikarate">Karatê</label><br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+    </div>
+    
+</body>
+</html>
