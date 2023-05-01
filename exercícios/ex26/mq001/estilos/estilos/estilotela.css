@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/*Versão para Tela*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgb(126, 115, 115);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding: 10px 5px 5px 0px;
+}
+fieldset {
+    padding: 10px;
+}
+
+menu ul {
+    list-style-type: none;
+    background-color: gray;
+
+}
+
+menu li {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(71, 69, 69);
+    color: white;
+    transition: 0.2s;
+    margin-left: 10px;
+}
+menu li:hover {
+    color: black;
+    background-color: darkgray;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+article {
+    max-width: 600px;
+    min-width: 250px;
+    margin: auto;
+    display: block;
+    text-align: justify;
+}
